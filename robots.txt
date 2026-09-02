@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://flavioycarmina.github.io/sonia-beauty-lifestyle/sitemap.xml
