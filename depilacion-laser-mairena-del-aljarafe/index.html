@@ -57,6 +57,13 @@
     .point b{display:block;margin-bottom:4px}
     .point span{font-size:13px;color:var(--muted)}
     .feature{background:var(--sand)}
+    .zones-section{background:#fff}
+    .zones-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+    .zone-card{background:var(--cream);border:1px solid var(--line);border-radius:18px;padding:24px}
+    .zone-card h3{font-family:var(--serif);font-size:27px;font-weight:500;margin:0 0 12px}
+    .zone-list{display:flex;flex-wrap:wrap;gap:8px}
+    .zone-list span{display:inline-flex;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 11px;font-size:12px;color:#514b46}
+    .zone-note{margin-top:24px;color:var(--muted);font-size:14px;max-width:900px}
     .feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
     .feature-photo{height:520px;border-radius:24px;overflow:hidden}
     .steps{counter-reset:step;margin-top:32px;border-top:1px solid rgba(80,60,50,.18)}
@@ -83,6 +90,7 @@
     footer a{color:#fff}
     @media(max-width:850px){
       .hero-grid,.intro-grid,.feature-grid,.local-grid{grid-template-columns:1fr;gap:40px}
+      .zones-grid{grid-template-columns:1fr}
       .hero-photo,.feature-photo{height:420px}
       .cta-grid{display:block}
       .cta .btn{margin-top:18px}
@@ -194,7 +202,7 @@
           </div>
         </div>
         <div class="hero-photo">
-          <img src="../images/maquina-depilacion-laser-diodo.webp" alt="Máquina de depilación láser de diodo en Sonia Beauty Lifestyle" fetchpriority="high" decoding="async">
+          <img src="../images/maquina-depilacion-laser-diodo.webp" alt="Máquina de depilación láser de diodo en Sonia Beauty Lifestyle" width="744" height="792" fetchpriority="high" decoding="async">
         </div>
       </div>
     </section>
@@ -219,15 +227,58 @@
       </div>
     </section>
 
+    <section class="section zones-section">
+      <div class="wrap">
+        <div class="eyebrow">02 · Zonas disponibles</div>
+        <h2>Zonas de depilación <em>láser.</em></h2>
+        <div class="text">
+          <p>En Sonia Beauty Lifestyle puedes consultar diferentes zonas de depilación láser de diodo. La oferta incluye zonas faciales, pequeñas y corporales, además de tratamientos combinados por zonas.</p>
+        </div>
+
+        <div class="zones-grid">
+          <div class="zone-card">
+            <h3>Zonas faciales y específicas</h3>
+            <div class="zone-list">
+              <span>Cara</span>
+              <span>Línea alba</span>
+              <span>Areolas</span>
+              <span>Interglúteos</span>
+            </div>
+          </div>
+          <div class="zone-card">
+            <h3>Zonas de cuerpo</h3>
+            <div class="zone-list">
+              <span>Axilas</span>
+              <span>Ingles</span>
+              <span>Medios brazos</span>
+              <span>Medias piernas</span>
+              <span>Piernas completas</span>
+            </div>
+          </div>
+          <div class="zone-card">
+            <h3>Zonas corporales</h3>
+            <div class="zone-list">
+              <span>Pecho</span>
+              <span>Abdomen</span>
+              <span>Espalda baja</span>
+              <span>Espalda completa</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="zone-note">Las zonas y combinaciones disponibles pueden variar según el servicio. Puedes consultar las opciones actuales y reservar tu cita a través de Booksy.</p>
+      </div>
+    </section>
+
     <section class="feature section">
       <div class="wrap feature-grid">
         <div class="feature-photo">
-          <img src="../images/cabina-tratamiento-sonia-beauty-lifestyle.webp" alt="Cabina de tratamiento de Sonia Beauty Lifestyle en Mairena del Aljarafe" loading="lazy" decoding="async">
+          <img src="../images/cabina-tratamiento-sonia-beauty-lifestyle.webp" alt="Cabina de tratamiento de Sonia Beauty Lifestyle en Mairena del Aljarafe" width="1050" height="1400" loading="lazy" decoding="async">
         </div>
         <div>
-          <div class="eyebrow">02 · ¿Cómo empezamos?</div>
+          <div class="eyebrow">03 · Antes de tu sesión</div>
           <h2>De la consulta a tu <em>sesión.</em></h2>
-          <p class="text">Si estás pensando en hacerte la depilación láser, el proceso puede empezar simplemente resolviendo tus dudas y conociendo el tratamiento que mejor encaja con tus necesidades.</p>
+          <p class="text">Antes de comenzar, en Sonia Beauty Lifestyle se valoran las características de la zona y del vello para orientarte sobre las opciones disponibles. El número de sesiones y la planificación pueden variar según cada persona.</p>
 
           <div class="steps">
             <div class="step"><div><b>Consulta</b><span>Nos cuentas qué zona quieres tratar y qué necesitas.</span></div></div>
@@ -235,6 +286,8 @@
             <div class="step"><div><b>Planificación</b><span>Te explicamos las pautas y recomendaciones del tratamiento.</span></div></div>
             <div class="step"><div><b>Sesión</b><span>Realizamos el tratamiento en el centro con cita previa.</span></div></div>
           </div>
+
+          <p class="text" style="margin-top:24px;">No todas las personas necesitan el mismo número de sesiones. Entre otros factores, pueden influir la zona, el tipo de vello y las características individuales. En el centro pueden orientarte después de valorar tu caso.</p>
         </div>
       </div>
     </section>
@@ -242,7 +295,7 @@
     <section class="section local">
       <div class="wrap local-grid">
         <div>
-          <div class="eyebrow">03 · Centro de estética en Mairena</div>
+          <div class="eyebrow">04 · Centro de estética en Mairena</div>
           <h2>Estamos en <em>Altos de Simón Verde.</em></h2>
           <div class="text">
             <p>Sonia Beauty Lifestyle se encuentra en <strong>Mairena del Aljarafe, Sevilla</strong>, en el Centro Comercial Altos de Simón Verde, Local 45.</p>
@@ -251,7 +304,7 @@
         </div>
         <div>
           <div class="feature-photo" style="height:360px;margin-bottom:22px">
-            <img src="../images/entrada-sonia-beauty-lifestyle.webp" alt="Entrada de Sonia Beauty Lifestyle en Mairena del Aljarafe" loading="lazy" decoding="async">
+            <img src="../images/entrada-sonia-beauty-lifestyle.webp" alt="Entrada de Sonia Beauty Lifestyle en Mairena del Aljarafe" width="1050" height="1400" loading="lazy" decoding="async">
           </div>
           <div class="location">
             <b>📍 Sonia Beauty Lifestyle</b>
@@ -264,7 +317,7 @@
 
     <section class="faq section">
       <div class="wrap">
-        <div class="eyebrow">04 · Preguntas frecuentes</div>
+        <div class="eyebrow">05 · Preguntas frecuentes</div>
         <h2>Antes de reservar, <em>te contamos lo importante.</em></h2>
 
         <details>
@@ -289,7 +342,7 @@
     <section class="cta">
       <div class="wrap cta-grid">
         <div>
-          <div class="eyebrow" style="color:#e8cfc9">05 · Reserva tu cita</div>
+          <div class="eyebrow" style="color:#e8cfc9">06 · Reserva tu cita</div>
           <h2>¿Buscas depilación láser en Mairena del Aljarafe?</h2>
           <p>Consulta disponibilidad, resuelve tus dudas y reserva tu cita con Sonia Beauty Lifestyle.</p>
         </div>
