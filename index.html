@@ -228,10 +228,15 @@
   .hero-local{font-family:Manrope,sans-serif; font-size:1.05rem; font-weight:600; letter-spacing:0.01em; color:var(--brown); margin:0 0 18px;}
   .hero h1{font-size:clamp(2.6rem, 6vw, 4.2rem); margin-bottom:20px;}
   .hero p.tag{font-size:1.15rem; color:var(--brown); max-width:36ch; margin-bottom:34px;}
-  .hero-btns{display:flex; gap:14px; flex-wrap:wrap;}
-  .hero-service-links{display:flex; gap:10px; flex-wrap:wrap; margin:0 0 22px;}
-  .hero-service-links .btn{padding:10px 15px; font-size:0.82rem;}
-  @media(max-width:480px){ .hero-service-links{gap:8px;} .hero-service-links .btn{padding:10px 12px; font-size:0.78rem;} }
+  .hero-btns{display:flex; gap:10px; flex-wrap:wrap;}
+  .hero-btns .btn{padding:9px 16px; font-size:0.82rem;}
+  .hero-service-links{display:flex; gap:12px; flex-wrap:wrap; margin:0 0 22px;}
+  .hero-service-links .btn{padding:15px 22px; font-size:1rem; font-weight:700; min-width:145px; text-align:center;}
+  @media(max-width:480px){
+    .hero-service-links{gap:9px;}
+    .hero-service-links .btn{padding:13px 15px; font-size:0.95rem; min-width:calc(50% - 6px);}
+    .hero-btns .btn{padding:8px 13px; font-size:0.78rem;}
+  }
   .photo-block{
     aspect-ratio: 4/5;
     background: linear-gradient(150deg, var(--nude), var(--rose));
