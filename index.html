@@ -229,6 +229,9 @@
   .hero h1{font-size:clamp(2.6rem, 6vw, 4.2rem); margin-bottom:20px;}
   .hero p.tag{font-size:1.15rem; color:var(--brown); max-width:36ch; margin-bottom:34px;}
   .hero-btns{display:flex; gap:14px; flex-wrap:wrap;}
+  .hero-service-links{display:flex; gap:10px; flex-wrap:wrap; margin:0 0 22px;}
+  .hero-service-links .btn{padding:10px 15px; font-size:0.82rem;}
+  @media(max-width:480px){ .hero-service-links{gap:8px;} .hero-service-links .btn{padding:10px 12px; font-size:0.78rem;} }
   .photo-block{
     aspect-ratio: 4/5;
     background: linear-gradient(150deg, var(--nude), var(--rose));
@@ -393,6 +396,11 @@
 <h1>Centro de estética en Mairena del Aljarafe</h1>
 <h2 class="hero-local">Depilación láser, maderoterapia, presoterapia y HIFU</h2>
 <p class="tag">Sonia Beauty Lifestyle es tu espacio de estética y bienestar en Mairena del Aljarafe: depilación láser de diodo, maderoterapia, presoterapia y tratamientos HIFU facial y corporal, con atención cercana y personalizada.</p>
+<div class="hero-service-links" aria-label="Acceso directo a tratamientos">
+<a class="btn ghost" href="depilacion-laser-mairena-del-aljarafe/">Depilación láser</a>
+<a class="btn ghost" href="presoterapia-mairena-del-aljarafe/">Presoterapia</a>
+<a class="btn ghost" href="maderoterapia-mairena-del-aljarafe/">Maderoterapia</a>
+</div>
 <div class="hero-btns">
 <a class="btn" href="https://sonialife.booksy.com/a" rel="noopener noreferrer" target="_blank">Reservar cita</a>
 <a class="btn ghost" href="#tratamientos">Ver tratamientos</a>
