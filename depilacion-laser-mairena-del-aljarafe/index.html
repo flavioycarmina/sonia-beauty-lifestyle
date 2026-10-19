@@ -105,7 +105,16 @@
       h1{font-size:47px}
       .lead{font-size:16px}
     }
-  </style>
+  
+    /* Acento cromático propio de depilación láser: sutil y compatible con la identidad común. */
+    :root{--treatment-accent:#8C6AA3;--treatment-soft:#F4EFF9;--treatment-mid:#D9C8E6}
+    .eyebrow{color:var(--treatment-accent)}
+    .hero{background:linear-gradient(135deg,#fff 0%,var(--treatment-soft) 100%)}
+    .point{border-top:2px solid var(--treatment-mid)}
+    .feature{background:var(--treatment-soft)}
+    .zone-list span{border-color:var(--treatment-mid)}
+
+</style>
 
   <script type="application/ld+json">
   {
