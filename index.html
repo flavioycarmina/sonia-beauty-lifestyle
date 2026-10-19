@@ -366,6 +366,36 @@
   }
   .sticky-cta .btn{display:block; text-align:center; width:100%;}
   @media(max-width:859px){ .sticky-cta{display:block;} body{padding-bottom:64px;} }
+
+/* Portada: identidad común cálida, con acentos discretos por tratamiento. */
+:root{
+  --off-white:#FAF8F5;
+  --beige:#EFE7DF;
+  --nude:#E2C8B4;
+  --rose:#C99A76;
+  --rose-deep:#A66B4A;
+  --brown:#6E5443;
+  --brown-deep:#4A362A;
+  --ink:#39281F;
+  --line:rgba(74,54,42,.14);
+}
+body{background:var(--off-white)}
+header{background:rgba(250,248,245,.94)}
+.hero{background:linear-gradient(180deg,#F4EDE6 0%,var(--off-white) 100%)}
+.hero .eyebrow,.sobre-marks div{color:var(--brown)}
+.hero-service-links a{border-radius:3px!important;text-decoration:none}
+.hero-service-links a[href*="depilacion-laser"]{background:#F4EFF9!important;border-color:#D9C8E6!important;color:#765C8D!important}
+.hero-service-links a[href*="presoterapia"]{background:#EFF7F4!important;border-color:#C5DED7!important;color:#527F75!important}
+.hero-service-links a[href*="maderoterapia"]{background:#FAF2EA!important;border-color:#E2C8B4!important;color:#946044!important}
+.hero-service-links a:hover{filter:brightness(.97)}
+.tratamientos{background:#F4EDE6}
+.tratamientos-extra{background:var(--off-white)}
+.tratamientos-corp{background:#F4EDE6}
+.precio-cat{border-top:1px solid var(--line)}
+/* Los CTA de WhatsApp mantienen el verde reconocible del servicio. */
+a.btn[href*="wa.me"]{background:#6B8F79;border-color:#6B8F79;color:#fff}
+a.btn[href*="wa.me"]:hover{background:#55745F;border-color:#55745F}
+
 </style>
 <style>
 .legal-page{padding:72px 0;border-top:1px solid rgba(0,0,0,.08);background:#fff}
