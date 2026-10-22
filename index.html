@@ -716,7 +716,7 @@ a.btn[href*="wa.me"]:hover{background:#55745F;border-color:#55745F}
 <h3>2. Qué datos personales se pueden tratar</h3>
 <p>Este sitio web no dispone actualmente de formularios propios de registro, contacto o compra. Si una persona contacta voluntariamente con Sonia Beauty Lifestyle mediante correo electrónico, teléfono o WhatsApp, podrán tratarse los datos que facilite, como nombre, teléfono, dirección de correo electrónico y el contenido de la comunicación.</p>
 <p>Cuando el usuario acceda voluntariamente a servicios externos enlazados desde esta web, como WhatsApp, Instagram o Google Maps, dichos servicios podrán realizar sus propios tratamientos de datos conforme a sus respectivas políticas.</p>
-<h3>3. Finalidades del tratamiento</h3>
+<h3>3. Finalidades del tratamiento</h3>\n<p>Si acepta las cookies de analítica, Google Analytics 4 tratará datos de uso del sitio (por ejemplo, páginas consultadas e interacciones con enlaces de WhatsApp o teléfono) para elaborar estadísticas y mejorar la web. Esta herramienta no se carga si se rechaza el consentimiento. Puede cambiar su elección con el botón «Cookies». Consulte también la política de privacidad de Google.</p>
 <ul>
 <li>Atender consultas y solicitudes de información.</li>
 <li>Gestionar comunicaciones relacionadas con los servicios ofrecidos.</li>
@@ -749,14 +749,13 @@ a.btn[href*="wa.me"]:hover{background:#55745F;border-color:#55745F}
 <h3>1. Qué son las cookies</h3>
 <p>Las cookies son pequeños archivos que pueden almacenarse en el dispositivo de la persona usuaria cuando visita un sitio web y que permiten, entre otras funciones, recordar determinadas preferencias o facilitar determinadas funciones técnicas.</p>
 <h3>2. Cookies utilizadas en este sitio web</h3>
-<p>En la versión actual del sitio web de Sonia Beauty Lifestyle no se han configurado cookies propias destinadas a realizar publicidad personalizada, elaborar perfiles de navegación ni realizar analítica comercial mediante herramientas como Google Analytics o Meta Pixel.</p>
-<p>La web está publicada actualmente mediante GitHub Pages y funciona como un sitio web estático. No se ha incorporado en esta página ningún sistema propio de seguimiento publicitario ni ningún mecanismo de analítica que requiera consentimiento.</p>
+<p>Este sitio utiliza Google Analytics 4 (Google) para obtener estadísticas de uso, como páginas visitadas e interacciones con enlaces de contacto. La herramienta solo se carga si la persona usuaria acepta las cookies de analítica mediante el banner. Si las rechaza, Google Analytics permanece desactivado.</p><p>La elección se guarda en el navegador para recordar la preferencia. Puede cambiarse en cualquier momento mediante el botón «Cookies» de la web. Google puede tratar datos técnicos de navegación; consulte la información de privacidad de Google para conocer sus condiciones.</p>
 <p>El sitio puede utilizar mecanismos técnicos necesarios para prestar el servicio, mantener la seguridad o garantizar el funcionamiento de la infraestructura de alojamiento. Cuando se utilicen tecnologías estrictamente necesarias, estas no se emplearán para crear perfiles publicitarios.</p>
 <h3>3. Servicios y enlaces de terceros</h3>
 <p>El sitio web contiene enlaces a servicios externos como WhatsApp, Instagram y Google Maps. Al acceder a dichos servicios, el proveedor correspondiente puede utilizar sus propias cookies u otras tecnologías de almacenamiento, de acuerdo con sus respectivas políticas y condiciones. Estas tecnologías se gestionan en las páginas de cada proveedor y no son controladas por Sonia Beauty Lifestyle.</p>
 <h3>4. Gestión de cookies</h3>
 <p>La persona usuaria puede configurar, bloquear o eliminar las cookies mediante las opciones de configuración de su navegador.</p>
-<p>Si en el futuro se incorporan cookies o tecnologías no estrictamente necesarias que requieran consentimiento, Sonia Beauty Lifestyle habilitará el mecanismo correspondiente para solicitar dicho consentimiento antes de su instalación y ofrecerá una opción equivalente para rechazarlas.</p>
+<p>Las cookies o tecnologías de analítica no se activan antes del consentimiento. La persona usuaria puede aceptar o rechazar la analítica y modificar posteriormente su elección mediante el botón «Cookies» disponible en el sitio.</p>
 <h3>5. Actualización de esta política</h3>
 <p>Esta Política de Cookies podrá actualizarse cuando se incorporen, modifiquen o eliminen cookies o tecnologías similares en el sitio web.</p>
 <p>Antes de considerar definitiva esta política, se realizará una comprobación técnica adicional cuando la web se configure detrás de Cloudflare, para verificar las tecnologías que se cargan realmente en la versión final del sitio.</p>
@@ -795,6 +794,46 @@ function showTab(tab){
   document.getElementById('btn-ellas').classList.toggle('active', tab==='ellas');
   document.getElementById('btn-ellos').classList.toggle('active', tab==='ellos');
 }
+</script>
+<!-- Preferencias de cookies y analítica: Google Analytics solo se carga tras consentimiento explícito. -->
+<style>
+#sonia-cookie-banner{position:fixed;z-index:9999;left:16px;right:16px;bottom:16px;max-width:760px;margin:auto;background:#fffdfb;color:#39281f;border:1px solid #d9c8b8;box-shadow:0 8px 32px rgba(45,32,24,.18);padding:18px 20px;font:14px/1.5 Manrope,Arial,sans-serif;border-radius:4px}
+#sonia-cookie-banner p{margin:0 0 12px}#sonia-cookie-banner .cookie-actions{display:flex;gap:9px;flex-wrap:wrap}
+#sonia-cookie-banner button,#sonia-cookie-settings{font:600 13px Manrope,Arial,sans-serif;cursor:pointer;border:1px solid #6e5443;padding:9px 13px;border-radius:3px}
+#sonia-cookie-accept{background:#6e5443;color:white}#sonia-cookie-reject,#sonia-cookie-customize{background:transparent;color:#6e5443}
+#sonia-cookie-settings{position:fixed;z-index:9998;bottom:12px;left:12px;background:#fffdfb;color:#6e5443;box-shadow:0 2px 10px #0002}
+@media(max-width:520px){#sonia-cookie-banner{left:8px;right:8px;bottom:8px;padding:15px}#sonia-cookie-banner .cookie-actions button{flex:1}}
+</style>
+<div id="sonia-cookie-banner" role="dialog" aria-label="Preferencias de cookies" aria-live="polite" hidden>
+<p><strong>Cookies de analítica</strong><br>Usamos Google Analytics para conocer, de forma agregada, cómo se utiliza esta web y mejorar sus contenidos. Solo se activará si aceptas. Puedes rechazarla o cambiar tu elección cuando quieras. Consulta la <a href="/sonia-beauty-lifestyle/#cookies" style="text-decoration:underline">Política de cookies</a>.</p>
+<div class="cookie-actions"><button id="sonia-cookie-accept" type="button">Aceptar analítica</button><button id="sonia-cookie-reject" type="button">Rechazar</button><button id="sonia-cookie-customize" type="button">Cambiar elección</button></div>
+</div>
+<button id="sonia-cookie-settings" type="button" aria-label="Cambiar preferencias de cookies">Cookies</button>
+<script>
+(function(){
+ const KEY='sonia_analytics_consent_v1', MEASUREMENT='G-760Q890Z82';
+ const banner=document.getElementById('sonia-cookie-banner'), settings=document.getElementById('sonia-cookie-settings');
+ function loadAnalytics(){
+   if(window.soniaAnalyticsLoaded)return; window.soniaAnalyticsLoaded=true;
+   window.dataLayer=window.dataLayer||[];function gtag(){window.dataLayer.push(arguments)}
+   window.gtag=gtag;gtag('js',new Date());gtag('config',MEASUREMENT);
+   const s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+MEASUREMENT;document.head.appendChild(s);
+   document.addEventListener('click',function(e){const a=e.target.closest('a[href]');if(!a)return;
+     const href=a.href||'';let label='';
+     if(href.includes('wa.me')||href.includes('whatsapp.com'))label='whatsapp_click';
+     else if(href.startsWith('tel:'))label='phone_click';
+     if(label&&window.gtag)gtag('event',label,{link_url:href,link_text:(a.innerText||'').trim().slice(0,100)});
+   });
+ }
+ function setChoice(choice){try{localStorage.setItem(KEY,choice)}catch(e){}banner.hidden=true;if(choice==='accepted')loadAnalytics()}
+ function show(){banner.hidden=false}
+ let choice=null;try{choice=localStorage.getItem(KEY)}catch(e){}
+ if(choice==='accepted')loadAnalytics();else if(choice!=='rejected')show();
+ document.getElementById('sonia-cookie-accept').addEventListener('click',()=>setChoice('accepted'));
+ document.getElementById('sonia-cookie-reject').addEventListener('click',()=>setChoice('rejected'));
+ document.getElementById('sonia-cookie-customize').addEventListener('click',show);
+ settings.addEventListener('click',show);
+})();
 </script>
 </body>
 </html>
