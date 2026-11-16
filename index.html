@@ -400,7 +400,7 @@ a.btn[href*="wa.me"]:hover{background:#55745F;border-color:#55745F}
 
 /* Portada inspirada en la referencia: tres paneles editoriales con acentos suaves. */
 .treatment-hero{padding:clamp(18px,3vw,38px) 0;background:#FAF8F5}
-.treatment-hero-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:1440px;margin:0 auto;padding:0 clamp(14px,2vw,28px)}
+.treatment-hero-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:1440px;margin:0 auto;padding:0 clamp(14px,2vw,28px)}
 .treatment-tile{position:relative;isolation:isolate;min-height:310px;overflow:hidden;display:flex;align-items:center;background:#f4eff9;border-radius:3px}
 .treatment-tile>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-2}
 .treatment-tile:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(248,244,250,.97) 0%,rgba(248,244,250,.87) 48%,rgba(248,244,250,.06) 100%)}
@@ -411,7 +411,7 @@ a.btn[href*="wa.me"]:hover{background:#55745F;border-color:#55745F}
 .treatment-tile p{font-size:clamp(.7rem,.9vw,.88rem);line-height:1.5;max-width:27ch;margin:0 0 18px;color:#55483f}
 .tile-cta{display:inline-flex;align-items:center;justify-content:center;gap:5px;padding:11px 15px;border-radius:24px;background:#B7A0C9;color:#fff;font-size:.58rem;letter-spacing:.035em;font-weight:700;white-space:nowrap}
 .press-tile{background:#eff7f4}.press-tile:after{background:linear-gradient(90deg,rgba(239,247,244,.97) 0%,rgba(239,247,244,.87) 48%,rgba(239,247,244,.04) 100%)}
-.press-tile .tile-kicker{color:#5d8f84}.press-tile .tile-cta{background:#82b3a7}
+.press-tile .tile-kicker{color:#5d8f84}.press-tile .tile-cta{background:#82b3a7}.tile-cta.tile-more{display:inline-flex;margin-top:9px;background:transparent!important;color:#4A362A!important;border:1px solid currentColor;text-decoration:none}.laser-tile .tile-cta.tile-more{color:#765C8D!important}.press-tile .tile-cta.tile-more{color:#527F75!important}
 .madero-tile{background:#faf2ea}.madero-tile:after{background:linear-gradient(90deg,rgba(250,242,234,.97) 0%,rgba(250,242,234,.87) 48%,rgba(250,242,234,.04) 100%)}
 .madero-tile .tile-kicker{color:#a66b4a}.madero-tile .tile-cta{background:#bd8c6b}
 @media(max-width:900px){.treatment-hero-grid{grid-template-columns:1fr;max-width:680px}.treatment-tile{min-height:290px}.tile-copy{max-width:72%}.treatment-tile h1,.treatment-tile h2{font-size:clamp(2rem,6vw,2.6rem)}}
@@ -465,7 +465,8 @@ a.btn[href*="wa.me"]:hover{background:#55745F;border-color:#55745F}
         <div class="tile-kicker">DEPILACIÓN LÁSER <span></span></div>
         <h2 class="tile-heading">Depilación láser<br/>de diodo</h2>
         <p>Tecnología láser de diodo para una depilación eficaz, segura y duradera.</p>
-        <a class="tile-cta" href="https://wa.me/34675590994?text=Hola%2C%20Sonia%20Beauty%20Lifestyle.%20Me%20gustar%C3%ADa%20pedir%20cita%20para%20depilaci%C3%B3n%20l%C3%A1ser.%20%C2%BFPod%C3%A9is%20indicarme%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">☏&nbsp; PEDIR CITA POR WHATSAPP</a>
+        <a class="tile-cta" href="https://wa.me/34675590994?text=Hola%2C%20Sonia%20Beauty%20Lifestyle.%20Me%20gustar%C3%ADa%20pedir%20cita%20para%20depilaci%C3%B3n%20l%C3%A1ser.%20%C2%BFPod%C3%A9is%20indicarme%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">☏&nbsp; RESERVAR DEPILACIÓN LÁSER</a>
+        <a class="tile-cta tile-more" href="depilacion-laser-mairena-del-aljarafe/">CONSULTAR ZONAS Y TARIFAS</a>
       </div>
     </article>
     <article class="treatment-tile press-tile">
@@ -474,18 +475,11 @@ a.btn[href*="wa.me"]:hover{background:#55745F;border-color:#55745F}
         <div class="tile-kicker">PRESOTERAPIA <span></span></div>
         <h2>Presoterapia<br/>en Mairena</h2>
         <p>Reduce la retención de líquidos, mejora la circulación y recupera tu bienestar.</p>
-        <a class="tile-cta" href="https://wa.me/34675590994?text=Hola%2C%20Sonia%20Beauty%20Lifestyle.%20Me%20gustar%C3%ADa%20pedir%20cita%20para%20presoterapia.%20%C2%BFPod%C3%A9is%20indicarme%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">☏&nbsp; PEDIR CITA POR WHATSAPP</a>
+        <a class="tile-cta" href="https://wa.me/34675590994?text=Hola%2C%20Sonia%20Beauty%20Lifestyle.%20Me%20gustar%C3%ADa%20pedir%20cita%20para%20presoterapia.%20%C2%BFPod%C3%A9is%20indicarme%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">☏&nbsp; RESERVAR PRESOTERAPIA</a>
+        <a class="tile-cta tile-more" href="presoterapia-mairena-del-aljarafe/">CONSULTAR BONO Y DETALLES</a>
       </div>
     </article>
-    <article class="treatment-tile madero-tile">
-      <img src="images/sonia-tratamientos-corporales.webp" alt="Tratamientos de maderoterapia" loading="lazy"/>
-      <div class="tile-copy">
-        <div class="tile-kicker">MADEROTERAPIA <span></span></div>
-        <h2>Maderoterapia<br/>corporal</h2>
-        <p>Tratamiento natural que ayuda a mejorar el aspecto de la piel y la circulación.</p>
-        <a class="tile-cta" href="https://wa.me/34675590994?text=Hola%2C%20Sonia%20Beauty%20Lifestyle.%20Me%20gustar%C3%ADa%20pedir%20cita%20para%20maderoterapia.%20%C2%BFPod%C3%A9is%20indicarme%20disponibilidad%3F" target="_blank" rel="noopener noreferrer">☏&nbsp; PEDIR CITA POR WHATSAPP</a>
-      </div>
-    </article>
+
   </div>
 </section>
 <div class="wrap">
@@ -620,6 +614,11 @@ a.btn[href*="wa.me"]:hover{background:#55745F;border-color:#55745F}
 <div class="precio-line"><span>Bono 5 zonas</span><span class="p">119 €</span></div>
 <div class="precio-line"><span>Bono 7 zonas</span><span class="p">159 €</span></div>
 </div>
+<div class="precio-line"><span>Cuerpo completo</span><span class="p">60 €</span></div>
+<div class="precio-line"><span>Bono 3 zonas</span><span class="p">79 €</span></div>
+<div class="precio-line"><span>Bono 5 zonas</span><span class="p">119 €</span></div>
+<div class="precio-line"><span>Bono 7 zonas</span><span class="p">159 €</span></div>
+</div>
 <div class="precio-line"><span>Cuerpo completo</span><span class="p">59,99 €</span></div>
 <div class="precio-line"><span>Pack 3 zonas</span><span class="p">79,99 €</span></div>
 <div class="precio-line"><span>Pack 5 zonas</span><span class="p">119,99 €</span></div>
@@ -633,7 +632,11 @@ a.btn[href*="wa.me"]:hover{background:#55745F;border-color:#55745F}
 <div class="precio-line"><span>Pecho + abdomen</span><span class="p">40 €</span></div>
 <div class="precio-line"><span>Bono 5 zonas</span><span class="p">119 €</span></div>
 </div>
-<div class="precio-line"><span>Piernas completas</span><span class="p">49,99 €</span></div>
+<div class="precio-line"><span>Piernas completas</span><span class="p">50 €</span></div>
+<div class="precio-line"><span>Pecho + abdomen</span><span class="p">40 €</span></div>
+<div class="precio-line"><span>Bono 5 zonas</span><span class="p">119 €</span></div>
+</div>
+<div class="precio-line"><span>Piernas completas</span><span class="p">50 €</span></div>
 <div class="precio-line"><span>Pecho + abdomen</span><span class="p">39,99 €</span></div>
 <div class="precio-line"><span>Pack 3 zonas</span><span class="p">79,99 €</span></div>
 <div class="precio-line"><span>Pack 5 zonas</span><span class="p">119,99 €</span></div>
